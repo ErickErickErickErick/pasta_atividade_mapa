@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+<link rel="stylesheet" href="atividade.css">
+
+</head>
+<body>
+
+    <map name="mapa_brasil">
+
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('RS');" shape="circle" coords="260,440,20" href="https://www.estado.rs.gov.br/inicial" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('SC');" shape="circle" coords="296,411,20" href="https://g1.globo.com/sc/santa-catarina/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('PR');" shape="circle" coords="279,376,20" href="https://www.parana.pr.gov.br/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('SP');" shape="circle" coords="313, 346,20" href="https://ge.globo.com/futebol/times/sao-paulo/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('RJ');" shape="circle" coords="384, 354,20" href="https://g1.globo.com/rj/rio-de-janeiro/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('ES');" shape="circle" coords="408, 320,20" href="https://g1.globo.com/es/espirito-santo/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('MG');" shape="circle" coords="366, 313,20" href="https://brasilescola.uol.com.br/brasil/minas-gerais.htm" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('MS');" shape="circle" coords="239, 325,20" href="http://www.ms.gov.br/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('GO');" shape="circle" coords="301, 273,20" href="https://g1.globo.com/go/goias/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('BA');" shape="circle" coords="396, 229,20" href="https://ge.globo.com/ba/futebol/times/bahia/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('MT');" shape="circle" coords="229, 232,20" href="https://mundoeducacao.uol.com.br/geografia/mato-grosso-1.htm" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostrarTexto('RO');" shape="circle" coords="140, 205,20" href="https://www.ro.gov.br/" target="_blank">
+        <area shape="circle" coords="318, 196,20" href="https://www.to.gov.br/" target="_blank">
+        <area shape="circle" coords="455, 211,20" href="https://www.se.gov.br/" target="_blank">
+        <area shape="circle" coords="467, 198,20" href="https://alagoas.al.gov.br/" target="_blank">
+        <area shape="circle" coords="450, 179,20" href="https://g1.globo.com/pe/pernambuco/" target="_blank">
+        <area shape="circle" coords="387, 169,20" href="https://www.pi.gov.br/" target="_blank">
+        <area shape="circle" coords="472, 166,20" href="https://g1.globo.com/pb/paraiba/" target="_blank">
+        <area shape="circle" coords="468, 149,20" href="https://g1.globo.com/rn/rio-grande-do-norte/" target="_blank">
+        <area shape="circle" coords="432, 137,20" href="https://ge.globo.com/ce/futebol/times/ceara/" target="_blank">
+        <area shape="circle" coords="361, 132,20" href="https://www.ma.gov.br/" target="_blank">
+        <area shape="circle" coords="265, 130,20" href="https://www.pa.gov.br/" target="_blank">
+        <area shape="circle" coords="276, 51,20" href="https://www.portal.ap.gov.br/" target="_blank">
+        <area shape="circle" coords="158, 46,20" href="https://g1.globo.com/rr/roraima/" target="_blank">
+        <area shape="circle" coords="120, 118,20" href="https://brasilescola.uol.com.br/brasil/amazonas.htm" target="_blank">
+        <area shape="circle" coords="39, 185,20" href="http://acre.gov.br/" target="_blank">
+
+
+    </map>
+
+    <img src="mapa_brasil.jpg" id="mapa" usemap="#mapa_brasil">
+    <img src="boneco.gif" class="boneco" id="boneco" width="80px">
+    <div class="texto_rs" id="texto_rs">RIO GRANDE DO SUL</div>
+    <div class="texto_sc" id="texto_sc"> SANTA CATARINA   </div>
+</body>
+<script>
+    function Esconder()
+    {
+        texto_rs.style.display="none";
+        texto_sc.style.display="none";
+    }
+    function MostrarTexto(estado)
+    {
+        if(estado =="RS")
+        {
+            texto_rs.style.display = "block";
+        }
+    }
+</script>
+</html>
